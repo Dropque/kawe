@@ -12629,7 +12629,7 @@ header .logo {
   height: 56px;
   margin-left: 0 !important;
   width: 137px;
-  background:  url("https://s3.eu-west-2.amazonaws.com/amsonline/bovalino.png");
+  background-image: url("bovalino.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   -moz-transition: none;
