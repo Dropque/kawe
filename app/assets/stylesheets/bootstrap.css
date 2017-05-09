@@ -12629,7 +12629,7 @@ header .logo {
   height: 56px;
   margin-left: 0 !important;
   width: 137px;
-  background:  url("bovalino.png");
+  background:  url("https://s3.eu-west-2.amazonaws.com/amsonline/bovalino.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   -moz-transition: none;
@@ -12803,7 +12803,7 @@ header nav ul a:focus {
 /* line 87, ../scss/custom/_content.scss */
 #top {
   background-repeat: no-repeat;
-  background: url("right-arrow1.png");
+  background-image: url("right-arrow1.png");
   background-color: rgba(0, 0, 0, 0.2);
   background-position: 50% 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -16074,7 +16074,7 @@ body.slide-active {
 }
 /* line 159, ../scss/custom/_team-slider.scss */
 #team .owl-next {
-  background: url("right-arrow1.png");
+  background-image: url("right-arrow1.png");
   right: 50%;
   margin-right: -55px !important;
 }
