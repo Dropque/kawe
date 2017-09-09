@@ -12896,7 +12896,7 @@ header nav ul a:focus {
 **************************************/
 /* line 172, ../scss/custom/_content.scss */
 #about .container > p {
-  width: 60%;
+  width: 75%;
   margin: 0 auto 45px;
   font-weight: 300;
   font-size: 19px;
@@ -12912,7 +12912,7 @@ header nav ul a:focus {
 }
 /* line 185, ../scss/custom/_content.scss */
 #about .container .about__item i {
-  color: #e81c3b;
+  color: #FF9900;
   position: relative;
 }
 /* line 188, ../scss/custom/_content.scss */
@@ -12930,7 +12930,7 @@ header nav ul a:focus {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 2px solid #e81c3b;
+  border: 2px solid #FF9900;
 }
 /* line 199, ../scss/custom/_content.scss */
 #about .container .about__item h6 {
