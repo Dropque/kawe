@@ -40,7 +40,7 @@
 				            <a href="#blog">STATS</a>
 				          </li><!-- 
 				           --><li>
-				            <a href="#contact">CONTACT</a>
+				            <a href="#contact">DEMO</a>
 				          </li>
 				          </li><!--
 				           --><!--
@@ -723,9 +723,10 @@
 
 					<div class="container">
 
-						<h3 class="dark-blue"><strong>STAY IN TOUCH</strong></h3>
+						<h3 class="dark-blue"><strong>REQUEST A DEMO</strong></h3><span id="loading"></span>
+                        <div class="error"></div>
 
-						<form id="contact-form" action="http://www.themestreet.net/berliner/form_data.php" novalidate>
+						<form id="demo-form" data-remote ="true" >
 
 			              	<div class="main-form">
 
@@ -734,7 +735,7 @@
 			                  		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			                  			<label for="name">
 											<i class="fa fa-user"></i>
-					                  		<input class="gray" id="name" name="name" type="text">
+					                  		<input id="name" class="gray"  name="name" type="text">
 				                  			<span>NAME</span>
 			                  			</label>
 
@@ -743,7 +744,7 @@
 					                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					                	<label for="mail">
 											<i class="fa fa-envelope"></i>
-							                <input id="mail" class="gray" name="mail" type="text">
+							                <input id="email" class="gray" name="email" type="text">
 						                	<span>EMAIL</span>
 					                	</label>
 
@@ -752,8 +753,8 @@
 			                  		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			                  			<label for="subject">
 											<i class="fa fa-align-justify"></i>
-					                  		<input id="subject" class="gray" name="subject" type="text">
-				                  			<span>SUBJECT</span>
+					                  		<input id="organization" class="gray" name="organization" type="text">
+				                  			<span>COMPANY</span>
 			                  			</label>
 
 				              		</div>
@@ -761,6 +762,7 @@
 			                	</div>
 
 			                	<div class="row">
+			                	
 
 				                  	<div class="col-lg-12">
 				                  		<label for="message">
@@ -775,33 +777,11 @@
 
 			              	</div>
 
-
-			              	<div class="human-test left">
-			              	  <div id="test" class="left">
-			              	    <p>PLEASE SELECT NUMBER : <span></span></p>
-			              	  </div>
-			              	  <div class="left">
-			              	    <label>
-			              	      <input type="radio" name="rand" value="one"><span>1</span>
-			              	    </label><!-- 
-			              	     --><label>
-			              	      <input type="radio" name="rand" value="two"><span>2</span>
-			              	    </label><!-- 
-			              	     --><label>
-			              	      <input type="radio" name="rand" value="three"><span>3</span>
-			              	    </label><!-- 
-			              	     --><label>
-			              	      <input type="radio" name="rand" value="four"><span>4</span>
-			              	    </label><!-- 
-			              	     --><label>
-			              	      <input type="radio" name="rand" value="five"><span>5</span>
-			              	    </label>
-			              	  </div>
-			              	  <div class="clearfix"></div>
-			              	</div>
-			
-		                  	<button class="btn1 btn--white big right" type="submit">SEND MESSAGE <span class="icon-right-arrow"></span></button>
-
+                         	
+                            <div class="col-md-7">
+                                <button class="btn1 btn--white big right" type="submit" onclick="clickSend()">SEND REQUEST <span class="icon-right-arrow"></span></button>
+                             </div>
+                        
 			            </form>
 						
 					</div>
@@ -932,5 +912,5 @@
 
 		
 
-	
+
 
