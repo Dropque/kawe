@@ -13846,6 +13846,7 @@ header nav ul a:focus {
 /* line 983, ../scss/custom/_content.scss */
 #contact button {
   margin-top: 41px;
+  margin-bottom: 20px;
 }
 /* line 985, ../scss/custom/_content.scss */
 #contact button span {
