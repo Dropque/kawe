@@ -34,6 +34,14 @@ function email_subscribe(){
         }
 }
 
+    function watchError(option, content){
+        if(option){
+             $('.error').removeClass('alert-danger').addClass('alert alert-success').html(content);
+        }else{
+             $('.error').addClass('alert alert-danger').html(content);
+        }
+
+    }
 
 
 function clickSend(){
@@ -74,14 +82,7 @@ function clickSend(){
 }
 
 
-function watchError(option, content){
-    if(option){
-         $('.error').removeClass('alert-danger').addClass('alert alert-success').html(content);
-    }else{
-         $('.error').addClass('alert alert-danger').html(content);
-    }
 
-}
 
 function watchErro(option, content){
     if(option){
