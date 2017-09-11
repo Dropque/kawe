@@ -89,10 +89,7 @@ function finalSubmit(){
      }else if(data=="rejected"){
           watchError(false, "Could not complete your request, please retry");
      }
- },
- error : function(jqXHR, textStatus, errorThrown) {
-             watchError(false, "Couldn't complete your request, kindly try again");
-           }
+ }
  });
 
 }
