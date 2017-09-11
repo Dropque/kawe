@@ -3,6 +3,15 @@ class LandingsController < ApplicationController
   def index
   end
 
+  def subscribe
+    sub = Subscription.new(create_sub_params)
+    if sub.save
+      render text: "true"
+    else
+      render text: "false"
+    end
+  end
+
   def request_demo
     demo = Demo.new(create_request_params)
     puts "******************one"
@@ -20,7 +29,7 @@ class LandingsController < ApplicationController
 
       # send to our notificationgroup@dropque.com general mail
       # parameter is as follows, name, email, organization, role, purpose
-      DemoMailer.request_demo(params[:name], params[:email], params[:organization], params[:message]).deliver
+      #DemoMailer.request_demo(params[:name], params[:email], params[:organization], params[:message]).deliver
 
       render text: "received"
     else
@@ -31,6 +40,11 @@ class LandingsController < ApplicationController
 def create_request_params
     params.permit(:name,  :email, :organization, :message)
 end
+
+def create_sub_params
+    params.permit(:email)
+end
+
 
 
 

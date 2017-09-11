@@ -25,6 +25,8 @@ Rails.application.routes.draw do
     get 'new_member', to: 'users#build_profile', as: 'build_profile', :format => false
     get 'search', to: 'groups#search_member', as: 'search_member', :format => false
     post 'landings/request_demo', to: 'landings#request_demo'
+    post 'landings/subscribe', to: 'landings#subscribe'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
