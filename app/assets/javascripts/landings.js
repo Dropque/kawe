@@ -52,8 +52,24 @@ function clickSend(){
     } else if (!($('#message').val())) {
         watchError(false, "Please tell us what you want to use KAWE for");
     }
-    else {
-      finalSubmit();
+   else {
+         $('.error').removeClass("alert-danger").addClass("alert-success").html("Sending Your Request...");
+         var info = $('#demo-form');
+         $.ajax({
+         url: 'landings/request_demo',
+         type: 'POST',
+         data: info.serialize(),
+         success: function(data){
+             if (data == "true"){
+                 watchError(true,"DEMO request Sent successfully, we will get back to you shortly");
+             }else if(data=="false"){
+                  watchError(false, "Could not complete your request, please retry");
+             }
+         },
+         error : function(jqXHR, textStatus, errorThrown) {
+                     watchError(false, "Couldn't complete your request, kindly try again");
+                   }
+         });
     }
 }
 
@@ -76,21 +92,5 @@ function watchErro(option, content){
 
 }
 
-function finalSubmit(){
- $('.error').removeClass("alert-danger").addClass("alert-success").html("Sending Your Request...");
- var info = $('#demo-form');
- $.ajax({
- url: 'landings/request_demo',
- type: 'POST',
- data: info.serialize(),
- success: function(data){
-     if (data == "received"){
-         watchError(true,"DEMO request Sent successfully, we will get back to you shortly");
-     }else if(data=="rejected"){
-          watchError(false, "Could not complete your request, please retry");
-     }
- }
- });
 
-}
 

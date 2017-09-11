@@ -34,10 +34,10 @@ class LandingsController < ApplicationController
       # parameter is as follows, name, email, organization, role, purpose
       #DemoMailer.request_demo(params[:name], params[:email], params[:organization], params[:message]).deliver
 
-      render text: "received"
+      render text: "true"
     else
 
-      render text: "rejected"
+      render text: "false"
     end
   end
 def create_request_params
