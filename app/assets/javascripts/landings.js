@@ -5,6 +5,7 @@ $.ajaxSetup({
 });
 
 function email_subscribe(){
+  var subz = $('#email-subscribe');
   var emai = $("#emai").val();
    resul = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emai);
       if (!emai){
@@ -18,7 +19,7 @@ function email_subscribe(){
           $.ajax({
               url: 'landings/subscribe',
               type: 'POST',
-              data: emai,
+              data: subz.serialize(),
               success: function(data){
                   if (data == "true"){
                      watchErro(true,"Thanks for Subscribing, We shall get back to you shortly!");

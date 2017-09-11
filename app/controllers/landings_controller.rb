@@ -4,7 +4,10 @@ class LandingsController < ApplicationController
   end
 
   def subscribe
-    sub = Subscription.new(create_sub_params)
+    address = params[:emai]
+    #puts address
+    #puts "Seggegege"
+    sub = Subscription.new("email":address)
     if sub.save
       render text: "true"
     else
