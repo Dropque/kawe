@@ -1,5 +1,6 @@
 class DemoMailer < ApplicationMailer
-
+  default from: "notification@dropque.com"
+  #default from: "from@example.com"
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -10,12 +11,12 @@ class DemoMailer < ApplicationMailer
 	    @email = email
 	    @organization = organization
 	    @message = message
-	   mail(to: "notificationgroup@dropque.com", subject: "New KaweDemo Request")
-	end
+	   mail(to: "mustapha@dropque.com", subject: "New KaweDemo Request")
+	 end
 
+   def email_subscription(email)
+      @mail = email
+      mail(to: "mustapha@dropque.com", subject:"New Kawe Email Subscriber")
+   end
 
-  #def request_demo
-   # @greeting = "Hi"
-   # mail to: "to@example.org"
- # end
 end

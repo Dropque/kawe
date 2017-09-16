@@ -5,10 +5,9 @@ class LandingsController < ApplicationController
 
   def subscribe
     address = params[:emai]
-    #puts address
-    #puts "Seggegege"
     sub = Subscription.new("email":address)
     if sub.save
+      DemoMailer.email_subscription(params[:emai]).deliver
       render text: "true"
     else
       render text: "false"
@@ -32,7 +31,7 @@ class LandingsController < ApplicationController
 
       # send to our notificationgroup@dropque.com general mail
       # parameter is as follows, name, email, organization, role, purpose
-      #DemoMailer.request_demo(params[:name], params[:email], params[:organization], params[:message]).deliver
+      DemoMailer.request_demo(params[:name], params[:email], params[:organization], params[:message]).deliver
 
       render text: "true"
     else
