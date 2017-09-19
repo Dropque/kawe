@@ -15,7 +15,8 @@ class LandingsController < ApplicationController
   end
 
   def confirm
-
+      @result = params[:id] + ".vgL_ZV7Z56W7Hm1OmAXrJOzZysBNpGrtzeoWEbivc64"
+      render text: @result
   end
 
   def request_demo
