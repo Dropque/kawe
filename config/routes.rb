@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     get 'search', to: 'groups#search_member', as: 'search_member', :format => false
     post 'landings/request_demo', to: 'landings#request_demo'
     post 'landings/subscribe', to: 'landings#subscribe'
+    get '.well-known/acme-challenge/IaKD4vmFTWo5-UwKPd5Ex3VIrzcnmRHza7bI-GuF8As', to: 'landings#confirm'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
