@@ -3,6 +3,9 @@ class LandingsController < ApplicationController
   def index
   end
 
+  def store
+  end
+
   def subscribe
     address = params[:emai]
     sub = Subscription.new("email":address)

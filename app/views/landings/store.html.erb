@@ -23,29 +23,14 @@
 					<a href="#subheader" class="logo left"></a>
 					<span class="fa fa-bars hide bars"></span>
 					<nav class="right ">
-						<ul class="list-inline">
-					      <li>
-				            <a href="#about">ABOUT</a>
-				          </li>
-				         <!--  <li>
-				            <a href="#filter">PROJECT</a>
-				          </li>
-				          <li>
-				            <a href="#pricing">CLIENTS</a>
-				          </li>
-				          <li>
-				            <a href="#team">TEAM</a>
-				          </li>
-				          <li>
-				            <a href="#blog">STATS</a>
-				          </li> -->
-				          <li>
-				            <a href="#contact">DEMO</a>
-				          </li>
-				          <li>
-				            <a href="#store">STORE</a>
-				          </li>
-					    </ul>
+						<ul>
+						<li>
+						 
+						 <form action="#" type="GET" class="header-search-form" id="header-search-form">
+							<input type="text" name="q" placeholder="Search Kawe Content" id="header-search-input" value="">
+						</form>
+						</li>
+						</ul>
 					</nav>
 
 				 </div>
@@ -62,10 +47,7 @@
 
 					<div class="verticalize__box container">
 						<article>
-							<h2>Bringing Content To Life</h2>
-							<h4>Making Learning Easier With Augmented Reality</h4>
-							<a href="#about" class="btn1 btn--white big findout-more">FIND OUT MORE<span class="icon-right-arrow"></span></a>
-
+							<h2 class="center">Kawe Web Store</h2>
 						</article>
 					</div>
 					<div class="clearfix"></div>
@@ -89,31 +71,105 @@
 
 				  	<div class="container">
 
-						<h3 class="dark-blue"><strong>ABOUT US</strong></h3>
-						 <p class="center">Kawe uses augmented reality to create an immersive learning experience for Children in public schools across West Africa using  donated smartphone/tablet and our innovative app. With Kawe, teachers can bring abstract concepts and nebulous subjects to life with cool 3d teaching aids which pupils can interact with. Our entire object library is built around standardised curriculum paths, and specially designed to aid pupil's  understanding  of their teachers classes by practically experiencing them. </p>
+						<h3 class="dark-blue"><strong>Books</strong></h3>
+						 <p class="center">Here are the available materials on KAWE. You can download and modify to suit your specific academic needs </p>
 
 						<div class="row">
 							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
-								<i class="icon icon--flag"></i>
-						        <h6><strong>CRITICAL THINKING</strong></h6>
-						        <!-- <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p> -->
-							</div>
-							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
-								<i class="icon icon--mobile"></i>
-						        <h6><strong>NEW KNOWLEDGE</strong></h6>
-						       <!--  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p> -->
+								<%= image_tag('store1.jpg', style: 'height:50%;width:auto;') %>
+								<div class="row">
+									<div class="col-md-6"> <h6><strong>$40</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
 							</div>
 							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
-								<i class="icon icon--circle-compass"></i>
-						        <h6><strong>ORGANIZE INFORMATION</strong></h6>
-						       <!--  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p> -->
+								<%= image_tag('store2.jpg', style: 'height:50%;width:auto;') %>
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$35</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
 							</div>
-							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
-								<i class="icon icon--globe"></i>
-				          		<h6><strong>CONNECT IDEAS</strong></h6>
-				          		<!-- <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p> -->
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<%= image_tag('store3.jpg', style: 'height:50%;width:auto;') %>
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$105</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<%= image_tag('store4.jpg', style: 'height:50%;width:auto;') %>
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$75</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
 							</div>
 						</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<img src="<%= image_url('store5.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$15</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
+								<img src="<%= image_url('store6.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$65</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<img src="<%= image_url('store7.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$5</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
+								<img src="<%= image_url('store8.jpg') %>" alt="">
+				          		<div class="row">
+									<div class="col-md-6"> <h6><strong>$35</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<img src="<%= image_url('store9.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$50</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
+								<img src="<%= image_url('store10.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$15</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-1 col-md-4 about__item">
+								<img src="<%= image_url('store11.jpg') %>" alt="">
+						        <div class="row">
+									<div class="col-md-6"> <h6><strong>$30</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-lg-offset-0 col-md-offset-2 col-md-4 about__item">
+								<img src="<%= image_url('store1.jpg') %>" alt="">
+				          		<div class="row">
+									<div class="col-md-6"> <h6><strong>$60</strong></h6> </div>
+									<div class="col-md-6"> <h6><strong>Download</strong></h6> </div>
+								</div>
+							</div>
+						</div>
+
+						     <div class="col-md-7">
+                                <button class="btn1 btn--blue big right" type="submit" > More <span class="icon-right-arrow"></span></button>
+                             </div>
 
 					</div>
 
@@ -716,73 +772,7 @@
 
 		  		<!-- BEGIN CONTACT -->
 
-		  		<section id="contact">
-
-					<div class="container">
-
-						<h3 class="dark-blue"><strong>JOIN OUR KAWE ANDROID BETA PROGRAM</strong></h3>
-						<div class="error"></div>
-						<H4 class="dark-blue">REQUEST A DEMO</H4>
-
-						<form id="demo-form" data-remote ="true" >
-
-			              	<div class="main-form">
-
-			                	<div class="row">
-
-			                  		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-			                  			<label for="name">
-											<i class="fa fa-user"></i>
-					                  		<input id="name" class="gray"  name="name" type="text">
-				                  			<span>NAME</span>
-			                  			</label>
-
-			                  		</div>
-
-					                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					                	<label for="mail">
-											<i class="fa fa-envelope"></i>
-							                <input id="email" class="gray" name="email" type="text">
-						                	<span>EMAIL</span>
-					                	</label>
-
-					                </div>
-
-			                  		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-			                  			<label for="subject">
-											<i class="fa fa-align-justify"></i>
-					                  		<input id="organization" class="gray" name="organization" type="text">
-				                  			<span>COMPANY</span>
-			                  			</label>
-
-				              		</div>
-
-			                	</div>
-
-			                	<div class="row">
-
-
-				                  	<div class="col-lg-12">
-				                  		<label for="message">
-											<i class="fa fa-align-justify"></i>
-						                  	<textarea id="message" name="message" ></textarea>
-					                  		<span>MESSAGE</span>
-				                  		</label>
-
-				                  	</div>
-
-			                	</div>
-
-			              	</div>
-
-                         	
-                             <div class="col-md-7">
-                                <button class="btn1 btn--white big right" type="submit" onclick="clickSend()">SEND REQUEST <span class="icon-right-arrow"></span></button>
-                             </div>
-                        
-			            </form>
-						
-					</div>
+		  		
 		  			
 		  		
 
@@ -790,22 +780,7 @@
 
 		  		<!-- BEGIN THEME -->
 
-		  		<section class="theme" id="store">
-                     <h3 class="center dark-blue" ><strong> KAWE STORE </strong></h3> 
-		  			<div class="container">
-
-		  			
-						 <p class="center" style="color:white ">   Kawe store is place where our contents can be downloaded. Kawe uses augmented reality to create an immersive learning experience for Children in public schools across West Africa using  donated smartphone/tablet and our innovative. </p>
-
-
-
-  						      <div class="col-md-7">
-                                <button class="btn1 btn--white big right" type="submit" onclick="enterStore()">Enter Store <span class="icon-right-arrow"></span></button>
-                             </div>
-  						
-		  			</div>
-		  			
-		  		</section>
+		  		
 
 		  		<!-- END THEME -->
 
@@ -907,10 +882,10 @@
  
 		    <link href="http://externalcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
 		    <script src="js/libs/respond.src.js"></script>
-		<![endif]-->	
+		<![endif]-->
 
 
-		
+
 
 
 
