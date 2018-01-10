@@ -95,9 +95,7 @@ function watchErro(option, content){
 
  function enterStore(){
 
-  location.href = 'http://localhost:8888/store/';
-
-   
+  location.href = 'http://www.kaweapp.com/store/';
 
  }
 
